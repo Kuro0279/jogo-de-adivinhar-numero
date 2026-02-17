@@ -49,7 +49,8 @@ function chute() {
         }
     } else {
         document.getElementById('palpite').disabled = true;
-        document.getElementById('resultado').textContent = "Infelizmente suas vidas acabaram :(";
+        document.getElementById('resultado').textContent = "Infelizmente suas vidas acabaram, o número era: " + numeroMisterioso;
         document.getElementById('resultado2').textContent = "Resete a página (F5) para jogar novamente";
     }
+
 }

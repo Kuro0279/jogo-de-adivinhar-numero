@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><u>Jogo da avinhação de números</u></h1>
+    </header>
+    <main>
+        <section>
+            <h2>Como jogar:</h2>
+            <ul>
+                <li>Será gerado um número de aleatório entre 1 e 100</li>
+                <li>Você terá 10 chances de adivinhar o número aleatório</li>
+                <li>Você poderá pedir uma dica melhor usando uma de suas vidas</li>
+                <li>Se a página for recarregada, será gerado um número novo</li>
+            </ul>
+        </section>
+        <section>
+            <label for="palpite">Insira seu palpite</label><br>
+            <input type="number" id="palpite" autofocus><br>
+            <button onclick="chute()">Chutar</button><br>
+
+            <p id="maiorMenor"></p>
+            <p>Vidas restantes</p>
+            <p id="vidasRestantes">10</p>
+            <p>Números errados:</p>
+            <p id="chutesAnterior"></p>
+            <h2 id="resultado"></h2>
+            <h3 id="resultado2"></h2>
+        </section>
+    </main>
+</body>
+</html>
